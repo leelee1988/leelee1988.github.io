@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang=en>
+  <head>
+      <title>Lee's Portforlio.com</title>
+ <link rel="stylesheet" type="text/css" href="mystyle.css" />
+ </head>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">More Info
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+    <a href="whois.html">What Lee is about</a>
+    </div>
+  </div> 
+</div>
+    <script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+    <canvas id="myCanvas" width="1500" height="100" style="border:1px solid blue";>
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "60px Arial";
+ctx.strokeStyle = "white"
+ctx.strokeText("Welcome All!",450,70);
+</script>
+    
+<body>
+<h1>Leemarie Collets' Porfolio</h1>
+  <p>Before you continue enjoy some soft beach music</p>
+    <audio controls>
+  <source src="soft music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    <h2>About Leemarie</h2>
+  <img src="Snapchat-1284714542.jpg" alt="Picture of me" height="300" width="500" style="float:right"/>
+  <p> Hi, my name is Leemarie, but people mostly call me Lee or Leelee. I currently
+    live in Florida, and as of currently I reside in Fort Myers due to my studies but originally
+    live in Orlando, Florida. I am 20 years old and a sophomore in Florida Gulf Coast University. Currently I
+    am working as a Resident Asistent and when I am not in class, I am usually walking around hanging
+    out with my residents and offering help if needed. I am currently majoring in software engineering.
+    Hoping to continue to pursue my passion in technology, and software.</p>
+
+  <p> Technology has always been my passion and spiked my curiosty. I enjoy getting together
+    with people who have the same interest in me and expanding our knowledge as
+    well as getting that hands on experience. I really enjoy trying new things and getting
+    out of my comfort zone. I might not know alot right now but I will always be excited
+    to learn and take on any new projects. I enjoy working with others and hoping to
+    make a difference.</p>
+    <h3> Educational Experince</h3>
+      <ul>
+        <li>COP 1500</li>
+      </ul>
+    <h3>Awards and Accomplishments</h3>
+      <ul>
+        <li>Dean's List for College of Engineering(Whitker) in Spring 2018</li>
+        <li>Foundation's Scholarship</li>
+      </ul>
+    <h3> Public Profiles</h3>
+      <ul>
+        <li> <a href="https://www.codecademy.com/leelee1998">Codecademy</a> </li>
+        <li> <a href="https://github.com/leelee1988">Github</a> </li>
+        </ul>
+</body>
+</html>
+
+
